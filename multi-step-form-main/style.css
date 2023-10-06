@@ -1,0 +1,197 @@
+:root {
+  --Marine-blue: hsl(213, 96%, 18%);
+  --Purplish-blue: hsl(243, 100%, 62%);
+  --Pastel-blue: hsl(228, 100%, 84%);
+  --Light-blue: hsl(206, 94%, 87%);
+  --Strawberry-red: hsl(354, 84%, 57%);
+
+  --Cool-gray: hsl(231, 11%, 63%);
+  --Light-gray: hsl(229, 24%, 87%);
+  --Magnolia: hsl(217, 100%, 97%);
+  --Alabaster: hsl(231, 100%, 99%);
+  --White: hsl(0, 0%, 100%);
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(./assets/fonts/Ubuntu-Regular.ttf);
+    font-weight: 400;
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+main {
+  height: 100vh;
+  background-color: var(--Magnolia);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: var(--White);
+  height: 80%;
+  width: 900px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  gap: 20px;
+}
+
+.container .left {
+  background-image: url(./assets/images/bg-sidebar-desktop.svg);
+  height: 100%;
+  width: 30%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: var(--White);
+  border-radius: 15px;
+  padding: 40px 20px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.step span {
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+}
+
+.step-count {
+  color: var(--Light-gray);
+}
+
+.step-title {
+    font-weight: 600;
+}
+
+.container .right {
+    height: 100%;
+    width: 60%;
+    padding: 40px 20px;
+}
+
+.heading {
+    color: var(--Marine-blue);
+}
+
+.heading p {
+    color: var(--Cool-gray);
+}
+
+.step-1, .step-2, .step-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label p {
+    color: red;
+    display: none;
+}
+
+.form-container input {
+    padding: 10px;
+    border: 1px solid var(--Cool-gray);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: flex;
+    justify-content: end;
+}
+
+.btn, .btns button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--Marine-blue);
+    color: var(--White);
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hide {
+    display: none;
+}
+
+.plans {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 180px;
+}
+
+.plan {
+    padding: 20px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+.plan-info p {
+    margin-bottom: 5px;
+}
+
+.lists {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.list-info {
+    display: flex;
+    gap: 20px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--Marine-blue);
+    border-radius: 5px;
+    padding: 15px;
+    align-items: center;
+}

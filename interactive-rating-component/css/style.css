@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: "Overpass", sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(216, 12%, 8%);
+}
+
+.container {
+    background-color: hsl(213, 19%, 18%);
+    width: 27em;
+    border-radius: 30px;
+    padding: 25px;
+    height: 23em;
+    margin: 0 15px;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: hsl(214, 12%, 23%);
+    border-radius: 50%;
+}
+
+.star img {
+    padding: 5px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: hsl(0, 0%, 100%);
+}
+
+.text p {
+    line-height: 1.5em;
+    color: hsl(216, 12%, 54%);
+}
+
+.rating {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.rate {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rate button {
+    background-color: hsla(216, 12%, 43%, 0.2);
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    height: 45px;
+    width: 45px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.rate button:hover {
+    background-color: hsl(25, 97%, 53%);
+}
+
+.container .rate button.selected {
+    background-color: hsl(217, 12%, 53%);
+    color: #fff;
+}
+
+#submit {
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 30px;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#submit:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.hide {
+    display: none;
+}
+
+.thanks {
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.thanks img {
+    padding: 5px;
+    height: 7em;
+    width: 10em;
+}
+
+.thanks p:nth-child(2) {
+    display: inline-block;
+    background-color: #ffffff32;
+    padding: 5px 25px;
+    margin: 10px 0;
+    border-radius: 30px;
+    color: hsl(25, 97%, 55%);
+}
+
+.thanks h2 {
+    padding: 20px;
+}
+
+.thanks p:nth-child(4) {
+    color: hsl(216, 12%, 54%);
+}
