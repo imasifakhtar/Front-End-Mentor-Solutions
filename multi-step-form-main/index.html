@@ -62,7 +62,7 @@
 
       <div class="right">
         <!-- Step 1 start -->
-        <div class="step-1 hide">
+        <div class="step-1">
           <div class="heading">
             <h1>Personal info</h1>
             <p>Please provide your name, email address, and phone number.</p>
@@ -87,7 +87,7 @@
             </div>
             <input type="text" id="phone" placeholder="e.g. +1 234 567 890">
           </div>
-          <div class="btn">
+          <div id="btn">
             <button onclick="nextStep()">Next Step</button>
           </div>
         </div>
@@ -194,17 +194,42 @@
         <!-- Step 3 end -->
 
         <!-- Step 4 start -->
-        <div class="step-4">
+        <div class="step-4 hide">
           <div class="heading">
             <h1>Finishing up</h1>
             <p>Double-check everything looks OK before confirming.</p>
           </div>
 
-          <div class="total-container">
-            
+          <div class="summary">
+            <div class="plan-selected">
+              <div class="change">
+                <p>Arcade (Monthly)</p>
+                <a href="#">Change</a>
+              </div>
+              <div class="plan-total">
+                <p>$9/mo</p>
+              </div>
+            </div>
+            <hr id="line">
+            <div class="service">
+                <p>Online Service</p>
+                <p>+$1/mo</p>
+            </div>
+            <div class="storage">
+              <p>Larger Storage</p>
+              <p>+$2/mo</p>
+            </div>
+          </div>
+          <div class="total">
+            <p>Total (per month/year)</p>
+            <p>+$12/mo</p>
+          </div>
+
+          <div class="btns">
+            <button>Go Back</button>
+            <button>Confirm</button>
           </div>
         </div>
-
       </div>
     </div>
   </main>
@@ -212,12 +237,12 @@
 
 
 
-  
-  
+
+
 
   <!-- Dynamically add subscription and add-on selections here -->
 
-  Total (per month/year)
+  
 
   Go Back
   Confirm

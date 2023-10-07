@@ -19,6 +19,15 @@ function isEmpty(fname, email, phone) {
     }
 }
 
+function ifValid(email) {
+    if(email.length == 0) {
+        console.log("Empty");
+    } else {
+        console.log(email.length);
+    }
+}
+
 function nextStep() {
     isEmpty(fname.value, email.value, phone.value);
+    ifValid(email);
 }

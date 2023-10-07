@@ -96,13 +96,14 @@ main {
 
 .heading {
     color: var(--Marine-blue);
+    line-height: 1.5;
 }
 
 .heading p {
     color: var(--Cool-gray);
 }
 
-.step-1, .step-2, .step-3 {
+.step-1, .step-2, .step-3, .step-4 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -132,12 +133,12 @@ main {
     margin-bottom: 15px;
 }
 
-.btn {
+#btn {
     display: flex;
     justify-content: end;
 }
 
-.btn, .btns button {
+.btn, .btns, #btn button {
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
@@ -194,4 +195,40 @@ main {
     border-radius: 5px;
     padding: 15px;
     align-items: center;
+}
+
+.switch {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: var(--Magnolia);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.summary {
+    background-color: var(--Magnolia);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.plan-selected, .service, .storage, .total {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5;
+}
+
+.plan-selected a {
+    text-decoration: none;
+}
+
+#line {
+    margin: 15px 0;
+}
+
+.total {
+    padding: 0 20px;
 }
